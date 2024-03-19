@@ -1,0 +1,72 @@
+/* pagina*/
+.pedidos {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pedidos img {
+  width: 80%;
+  height: 500px;
+  margin: auto;
+}
+.pedidos .caja {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #eee;
+}
+.pedidos .caja .pasos_pedidos {
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-image: linear-gradient(orange, rgba(255, 166, 0, 0.663));
+  padding: 10px;
+}
+.pedidos .caja .pasos_pedidos p {
+  font-size: 30px;
+  text-align: center;
+}
+.pedidos .caja .pasos_pedidos h2 {
+  text-align: center;
+}
+.pedidos .caja .pedidos_personalizado {
+  border: 1px solid gray;
+  padding: 10px;
+  background-image: linear-gradient(orange, rgba(255, 166, 0, 0.663));
+}
+.pedidos .caja .pedidos_personalizado h2 {
+  text-align: center;
+}
+.pedidos .caja .pedidos_personalizado h3 {
+  text-align: center;
+}
+.pedidos .caja .pedidos_personalizado p {
+  font-size: 30px;
+  text-align: center;
+}
+.pedidos .caja .mapa-envio {
+  border: 1px solid gray;
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px;
+}
+.pedidos .caja .mapa-envio h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.pedidos .caja .mapa-envio .zonas_envios {
+  display: flex;
+}
+.pedidos .caja .mapa-envio .zonas_envios img {
+  width: 380px;
+}
+.pedidos .caja .mapa-envio .zonas_envios ul li {
+  font-size: 20px;
+}
+
+.realizacion-pedido {
+  width: 300px;
+}
+
+/*# sourceMappingURL=pedidos.css.map */

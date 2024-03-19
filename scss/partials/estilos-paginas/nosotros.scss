@@ -1,0 +1,53 @@
+
+
+/*pagina nosotros*/
+.nosotros {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    
+    .historia{
+        display: flex;
+        flex-direction: row;
+        img{
+            width: 100%;
+            height: 300px;
+        }
+        div{
+            padding: 10px;
+            h2{
+                text-align: center ;
+                font-weight: 700;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+    }
+    .vision-mision  {
+        display: flex;
+        flex-direction: row;
+        img{
+            width: 100%;
+            height: 300px;
+        }
+        div{
+            padding: 10px;
+            h2{
+                text-align: center ;
+                font-weight: 700;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+    }
+    .trabajo{
+
+        img{
+            width: 100%;
+        }
+    }
+}

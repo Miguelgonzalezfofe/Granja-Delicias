@@ -1,0 +1,52 @@
+/*CARRULES DE IMÁGENES*/
+.carousel-item img {
+    height: 500px;
+    width: 90%;
+}
+
+/*PRODUCTOS DESTACADOS*/
+.container-Destacados {
+    padding: 10px;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    gap: 10px;
+
+    .card {
+        width: 17rem;
+
+        &:hover {
+            box-shadow: 2px 2px 15px grey;
+            transform: scale(1.04);
+        }
+
+        &:hover .card-img-top {
+            opacity: 1;
+        }
+
+        .card-img-top {
+            border-radius: 10px;
+            opacity: 0.9;
+            margin-top: 2px;
+
+        }
+
+        .card-title {
+            font-weight: 800;
+        }
+
+        .precio {
+            text-align: center;
+            width: 50%;
+            border-radius: 10px;
+            background-color: red;
+            font-weight: 800;
+            color: white;
+            font-size: 1.7rem;
+            transition: 0.5s;
+
+        }
+    }
+
+    /* IMAGEN CARD */
+}

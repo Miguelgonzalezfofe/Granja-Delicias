@@ -1,0 +1,21 @@
+/*condicionales if y else*/
+
+
+
+/*bucles*/
+@for $i from 1 to 5 {
+    .titulo-#{$i} {
+        font-size: 1rem * $i;
+    }
+}
+
+
+
+
+
+
+/*EXTEND */
+
+
+
+/*MIXINS*/

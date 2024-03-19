@@ -1,0 +1,340 @@
+/* Variables */
+:root{
+--color-principal: orange;
+}
+
+/* ESTILOS GENERALES */asdasdf
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eee;
+}
+
+/* ENCABEZADO*/
+
+header{
+    /* overflow: hidden; */
+    /* height: 120px; */
+    width: 100%;
+}
+#img-fondo{
+    position: absolute;
+    width: 100%;
+    height: 120px;
+}
+/* LOGO*/
+header #logo{
+    width: 90px;
+    border-radius: 50%;
+}
+.barra-navegacion{
+    width: 90%;
+    justify-content: center;
+}
+.bi-list{
+    color: white;
+    font-size: 50px;
+    
+}
+.activo > a{
+    font-weight: 750;
+
+}
+.nav-item{
+    padding: 3px 45px;
+}
+.nav-item > a{
+    color: white;
+}
+.nav-item:hover{
+    background-color: rgba(255, 255, 255, 0.812);
+    transition: 0.3s;
+}
+.nav-item:hover:first-child{
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 9px 0 0 9px;
+}
+.nav-item:hover:last-child{
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 0 9px 9px 0;
+}
+.nav-item:hover{
+    background-color: white;
+    transition: 0.3s;
+}
+.nav-item:hover>a{
+    color: black;
+}
+/* imagen de fondo */
+
+.hero{
+    width: 100%;
+    height: 500px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.hero > img{
+    width: 100%;
+    height: 500px;
+}
+.carousel-item img{
+    height: 500px;
+}
+/* agregar a la carpeta fonts de scss */
+.titulos{
+    font-size: 60px;
+    text-align: center;
+    
+}
+
+.titulo-producto{
+    font-size: 40px;
+    text-align: center;
+}
+.subtitulos{
+    font: 20px;
+    color: black;
+}
+
+/* PRODUCTOS DESTACADOS */
+.container-Destacados{
+    /* background-color: brown; */
+    padding: 10px;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    gap: 10px; 
+}
+.card{
+    width: 17rem;   
+}
+.card:hover{
+    box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.424);
+}
+/* IMAGEN CARD */
+.card-img-top{
+    border-radius: 10px;
+    opacity: 0.9;
+    
+}
+.card:hover .card-img-top{
+    opacity: 1;
+}
+.card-title{
+    font-weight: 800;
+}
+
+.precio{
+    text-align: center;
+    width: 50%;
+    border-radius: 10px;
+    background-color: red;
+    font-weight: 900;
+    color: white;
+    font-size: 2rem;
+    transition: 0.5s;
+    
+}
+.card:hover .precio{
+    background-color: rgb(255, 23, 23);
+}
+/* CATALOGO PRODUCTOS */
+.catalogo{
+    height: 450px;
+}
+.accordion-button{
+    background-color: white;
+    color: black;
+}
+
+/* FORMULARIO DE CANTACTO */
+.contacto-formulario{
+    display: grid;
+    grid-template-columns: 50% 1fr ;
+
+
+}
+.formulario-contacto{
+    /* background-color: aquamarine; */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.formulario-contacto form{
+    background-color: grey;
+    padding: 0 10px 10px 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 80%;
+}
+.formulario-contacto > form input{
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+}
+.formulario-contacto > form textarea{
+    width: 100%;
+    border-radius: 5px;
+    /* height: 40px; */
+}
+
+.mensaje{
+    background-color: rgb(224, 193, 152);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 30px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+/* FOOTER */
+.footer{
+
+    background-color: rgb(1, 1, 22);
+    padding: 5px;
+    color: rgba(255, 255, 255, 0.769);
+}
+/* MAPA */
+.mapa{
+    padding: 10px;
+}
+.mapa > iframe{
+    border-radius: 10px;
+    width: 100%;
+    height: 400px;
+}
+/* SUSCRIPCION */
+form{
+    padding: 10px;
+}
+form > label{
+    display: block;
+}
+
+.contacto form input{
+    width: 100%;
+    height: 40px;
+    margin: 0 0 8px 0;
+    border-radius: 10px;
+}
+
+form textarea[name="mensaje"]{
+    width: 100%;
+    height: 230px;
+}
+form input[value="Enviar"]{
+    background-color: greenyellow;
+}
+.suscripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.suscripcion input{
+    width: 80%;
+    height: 50px;
+    margin: 5px 0;
+    border-radius: 10px;
+}
+.suscripcion input[value="Suscribete"]{
+    background-color: rgb(180, 21, 21);
+}
+
+
+.cajas-redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.redes{
+    background-color: rgba(255, 255, 255, 0.134);
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    border-radius: 20px;
+}
+.redes i{
+    font-size: 40px;
+    color: white;
+
+}
+/* MOBILE */
+
+@media screen and (max-width:990px){
+    .redes{
+        width: 60%;
+    } 
+    .nav-item a{
+        color: black
+    }
+}
+@media screen and (max-width:690px){
+
+    .contacto-formulario{
+        grid-template-columns: 1fr;
+    }
+    
+    .mensaje{
+        width: 80%;
+        margin: auto;
+    }
+    .mensaje h2 { 
+        font-size: 19px;
+    }
+    .mensaje p {
+        font-size: 14px;
+    }
+    .formulario-contacto form{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:425px){
+    .card{
+        width: 11rem;   
+    }
+    .card:hover{
+        box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.424);
+    }
+    /* IMAGEN CARD */
+    
+    .card-title{
+        font-weight: 800;
+        font-size: 14px;
+    }
+    
+    .precio{
+        font-size: 14px; 
+    }
+    .card-text{
+        font-size: 9px;
+    }
+
+    .card:hover .precio{
+        background-color: rgb(255, 23, 23);
+    }
+    /* CATALOGO PRODUCTOS */
+
+    
+    
+    .formulario-contacto form{
+        width: 100%;
+    }
+    .mensaje{
+        width: 100%;
+        margin: auto;
+}
+}
+
+
