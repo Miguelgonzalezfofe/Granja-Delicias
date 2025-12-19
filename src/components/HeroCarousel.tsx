@@ -6,25 +6,28 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
+import envios from "@/assets/media/img/banners/envios_carniceria.webp";
+import pinchos from "@/assets/media/img/banners/banner-pinchos.png";
+import banner from "@/assets/media/img/banners/pinchos_banner.png";
 
 const slides = [
   {
     title: "El mejor asado para el mejor asador",
     description: "Cortes seleccionados y calidad premium para tu parrilla.",
     cta: "Comprar Ahora",
-    image: "/media/img/banners/envios_carniceria.webp",
+    image: envios.src,
   },
   {
     title: "Envíos rápidos y seguros a tu hogar",
     description: "Recibí tu pedido fresco y a tiempo, sin complicaciones.",
     cta: "Consultar envíos",
-    image: "/media/img/banners/banner-pinchos.png",
+    image: pinchos.src,
   },
   {
     title: "Carne irresistibles listos para la parrilla",
     description: "Prácticos, sabrosos y listos en minutos",
     cta: "Ver Promos",
-    image: "/media/img/banners/pinchos_banner.png",
+    image: banner.src,
   },
 ];
 

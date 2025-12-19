@@ -1,11 +1,12 @@
-import type { Producto } from "@/hook/useCarrito";
+// import type { Producto } from "@/hook/useCarrito";
 
-export const productos: Producto[] = [
+import roasbBeef from "@/assets/media/img/productos/roas_beef.webp";
+export const productos = [
   {
     id: 1,
     nombre: "Roast beef",
     precio: 3580,
-    imagen: "/media/img/productos/roas_beef.webp",
+    imagen: roasbBeef.src,
     categoria: "carne",
   },
   {
