@@ -1,22 +1,37 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+---
+import Footer from "@/components/Footer";
+import { Navbar } from "@/components/Navbar";
+import { Toaster } from "@/components/ui/sonner";
+---
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/public/Logo-Granja-Delicias.png"
+    />
+    <meta name="author" content="Miguel Gonzalez" />
+
+    <meta name="generator" content={Astro.generator} />
+    <title>Granja Delicias Carnicería Familiar con Productos Frescos</title>
+    <meta
+      name="description"
+      content="Descubre Granja Delicias, tu carnicería familiar de confianza. Ofrecemos carnes frescas y productos congelados de alta calidad. Realiza tus pedidos en línea y disfruta de nuestros productos desde la comodidad de tu hogar."
+    />
+    <meta
+      name="keywords"
+      content="Carnicería familiar, Productos frescos, Productos congelados, Carne de calidad, Pedidos en línea, Granja Delicias, Carnes premium, Picada premium, Milanesa de pollo, Asado, Bondiola, Pechito de cerdo"
+    />
+    <link rel="stylesheet" href="/src/styles/global.css" />
+  </head>
+  <body>
+    <Navbar client:load />
+    <slot />
+    <Toaster richColors position="top-right" client:load />
+    <Footer client:load />
+  </body>
+</html>
