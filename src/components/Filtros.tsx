@@ -32,7 +32,7 @@ export function FiltrosProductos({
   };
 
   return (
-    <div className="flex flex-wrap md:gap-6 mb-6 mt-8 justify-center items-center border border-primary rounded-xl mx-10 md:w-1/2 md:h-18 h-24 md:mx-auto">
+    <div className="flex flex-wrap md:gap-6 mb-6 mt-8 justify-center items-center border border-white rounded-xl mx-10 md:w-1/2 md:h-18 h-24 md:mx-auto">
       <div className="flex gap-4">
         {["carne", "pollo", "cerdo"].map((cat) => (
           <div key={cat} className="flex items-center gap-2">

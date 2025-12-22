@@ -17,7 +17,7 @@ const menu = [
 
 export function Navbar() {
   return (
-    <header className="w-full fixed  bg-white z-10 shadow-inner  shadow-amber-100 ">
+    <header className="w-full fixed  py-1 bg-primary z-10 shadow-inner  shadow-amber-100 ">
       <div className="mx-auto flex h-24 max-w-7xl items-center justify-between md:justify-start px-4 gap-10">
         {/* Logo */}
         <img
@@ -31,8 +31,8 @@ export function Navbar() {
           <NavigationMenuList>
             {menu.map((m) => (
               <>
-                <NavigationMenuItem>
-                  <NavigationMenuLink href={m.slug} className="text-lg">
+                <NavigationMenuItem >
+                  <NavigationMenuLink href={m.slug} className="text-lg text-white bg-primary/60">
                     {m.nombre}
                   </NavigationMenuLink>
                 </NavigationMenuItem>
